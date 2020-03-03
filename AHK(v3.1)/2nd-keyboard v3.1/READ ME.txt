@@ -1,0 +1,40 @@
+------------------------------------------------------------------------------------------------------------------------
+2nd-Keyboard-V3.1
+DIY 104 Key Macro Keyboard Using Luamacros And AutoHotKey V3.1 - Quick Fix For V3
+Fixes Include: made the Luamacros code 20% faster to write to the keypressed.txt file, renamed the files in a more
+userfriendly way and when you download the full code packagae from my dropbox you now get instructions on how to use and 
+setup the code!
+Youtube Video On How To Setup Code: WIP (work in progress!) 
+If you have never used AutoHotKey, you must take this tutorial before proceeding!
+https://autohotkey.com/docs/Tutorial.htm
+So you will need luamacros and AutoHotKey, of course
+Luamacros: http://www.hidmacros.eu/forum/viewtopic.php?f=10&t=241#p794
+AutohotKey: https://autohotkey.com/
+I do suggest to download Notepad ++ for easy editing of the sample code!
+Notepad ++: https://notepad-plus-plus.org/downloads/v7.8.4/
+------------------------------------------------------------------------------------------------------------------------
+Instructions: 
+1) Download Luamacros and AutoHotKey
+2) If you havent allready placed this "AHK(3.1)/2nd-keyboard V3.1" in your C: drive, proceed to do so!
+3) Open the 2nd Keyboard V3.1 Luamacros Code.lua and follow instuction in the file (or follow instruction 3a-c)
+  3a) -- get luamacros HERE: http://www.hidmacros.eu/forum/viewtopic.php?f=10&t=241#p794
+  3b) -- plug in your 2nd keyboard, load this script into LUAmacros, and press the triangle PLAY button.
+  3c) -- Then, press any key on that keyboard to assign logical name ('MACROS') to macro keyboard 
+4) Testing to see if the Luamacros code has worked successfully
+  4a) --Open word,notepad,google or anywhere u can type
+  4bi) --Try typing on your 2nd keyboard
+  4bii) --If you CANT type on your 2nd keyboard thats correct!
+  4c) --Open "keypressed.txt" in the folder 2nd-Keyboard v3.1
+  4ci) --press space on your 2nd keyboard
+  4cii) --close and reopen Keypress.txt to see if the string "space" has appeared, if it has then its worked!
+  4di) --if all testing above has been successful, then you can proceed to step 5!
+  4dii) --if a test or both tests have not been successful follow the "ISNT-WORKING" file on my github: https://github.com/LiamCodingTIps/2nd-Keyboard-V3.1#
+  5) Now that you have done and tested the luamacros code, MINIMIZE it!
+  6) You can now finally start coding to make this keyboard a fully custamizable 104 key macro keyboard!
+  7) --This is the coding part!
+  7aii) --Open "Sample Code V3.1" in the folder "2nd-keyboard v3.1"
+  7aiii) -Follow the instructions provided!
+  8) Random
+  8ai) --If anything doesnt work please contact me or follow step 4dii
+  8aii) --If it doesnt have the right answer or fix for you please contact me using discord: TheClaySlay#8310, or by my email: LiamCodingTips.Contact@gmail.com
+  8b) --If you need help with using and changing any of the autohotkey code, Look at my personal code on my github: or contact me using discord or my email ^^^^

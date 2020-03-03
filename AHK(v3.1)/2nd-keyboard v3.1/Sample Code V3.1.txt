@@ -1,0 +1,43 @@
+
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+; HELLO, poeple who want info about making a second keyboard, using luamacros!
+; I suggest to open and read the "README.txt" file included!
+
+; If you have never used AutoHotKey, you must take this tutorial before proceeding!
+; https://autohotkey.com/docs/Tutorial.htm
+
+; So you will need luamacros, of course.
+; Luamacros: http://www.hidmacros.eu/forum/viewtopic.php?f=10&t=241#p794
+; AutohotKey: https://autohotkey.com/
+
+
+
+
+;-------------2ND KEYBOARD USING LUAMACROS-----------------
+
+#IfWinActive ahk_exe Adobe Premiere Pro.exe ;---EVERYTHING BELOW THIS LINE WILL ONLY WORK INSIDE PREMIERE PRO. But you can change this to anything you like. You can use Window Spy to determine the ahk_exe of any program, so that your macros will only work when and where you want them to.
+
+;There is no code here. T'was just an example.
+
+#IfWinActive ;---- This will allow for everything below this line to work in ANY application.
+# tippy(key) ;<--- this function will just launch a quick tooltip that shows you what key you pressed. OPTIONAL.
+Anything inside of these square bracets ahead should be copied into ANY code you want to use your second keyboard for!
+###[
+#NoEnv
+SendMode Input
+#InstallKeybdHook
+#UseHook On
+Menu, Tray, Icon, shell32.dll, 283 ; this changes the tray icon to a little keyboard!
+#SingleInstance force ;only one instance of this script may run at a time!
+#MaxHotkeysPerInterval 2000
+#WinActivateForce ;https://autohotkey.com/docs/commands/_WinActivateForce.htm
+
+
+~F24::
+FileRead, key, C:\AHK(v3.1)\2nd-keyboard v2.1\keypressed.txt ]###  
+^
+^--- i would suggest if you didnt download the "AHK\2nd_Keyboard\Luamacros" in your "C:" Drive i would suggest to move that as it would make the Luamacros code work immediatally and this sample code work immediatally without any tinkering!
+If (key = " [keyname] <-- you can see what key is being pressed by opening Luamacros and it will say it in the console, that would be written in C:AHK\2nd-keyboard\support_files\keypressed.txt 
+[code you want to use to do things, like a hotkey or something of that sort]
+^
+^<- if the code you want to use is more than one line you will need to place { above the first line and } below the last line
